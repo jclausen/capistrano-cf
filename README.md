@@ -22,7 +22,7 @@ At this time, this library has been tested on Coldfusion 9 and 10.  Look for a f
 ##Deploying on Windows
 ###Dependencies
 You will need SSH capability on your server. A simple way to accomplish this is by installing [Cygwin](https://www.cygwin.com/) with the following packages:
-* [sshd](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man8/sshd.8?query=sshd&sec=8) [setup instructions](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150)
+* [sshd](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man8/sshd.8?query=sshd&sec=8) ([setup instructions](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150))
 * [git](http://git-scm.com/) or [Subversion](https://subversion.apache.org/)
 * [curl](http://curl.haxx.se/)
 * [rsync](http://linux.die.net/man/1/rsync) (installed in CyWin by default)
