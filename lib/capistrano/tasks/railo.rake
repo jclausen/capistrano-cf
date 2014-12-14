@@ -4,10 +4,10 @@
 #set our server type - override downstream in your stage file
 set :server_type, 'windows'
   
-#Coldfusion service names for windows here or override them downstream in your stage file
+#Railo service names for windows here or override them downstream in your stage file
 set :railo_service_name, 'Apache Tomcat Railo'
 
-#Unix binary path for Coldfusion
+#Unix binary path for Railo (e.g. - [railo path]/railo_ctl)
 set :railo_unix_binary, '/opt/railo/railo_ctl'
 
 
