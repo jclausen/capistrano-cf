@@ -41,7 +41,8 @@ namespace :coldfusion do
       desc 'coldfusion restart on windows server'
       task :restart do
         on roles(:all) do
-          execute "net restart \'#{fetch(:coldfusion_service_name)}\'"
+          execute "net stop \'#{fetch(:coldfusion_service_name)}\'"
+          execute "net start \'#{fetch(:coldfusion_service_name)}\'"
           end
       end
     
