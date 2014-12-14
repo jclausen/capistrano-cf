@@ -25,7 +25,7 @@ You will need SSH capability on your server. A simple way to accomplish this is 
 * [sshd](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man8/sshd.8?query=sshd&sec=8) ([setup instructions](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150))
 * [git](http://git-scm.com/) or [Subversion](https://subversion.apache.org/)
 * [curl](http://curl.haxx.se/)
-* [rsync](http://linux.die.net/man/1/rsync) (installed in CyWin by default)
+* [rsync](http://linux.die.net/man/1/rsync) (installed in CygWin by default)
 
 Make sure to set your service names for both the CFML application server and, if applicable, the Jetty Service.  You can skip the Jetty service task if your application does not use Java classloaders (This library was written with [Coldbox](http://www.coldbox.org/) applications in mind, and the Jetty service actions helpt to prevent Java Concurrent Modification errors when performing the framework reinit).
 
