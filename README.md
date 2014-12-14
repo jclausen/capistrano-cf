@@ -4,7 +4,7 @@ Coldfusion and Railo Rake Tasks for Capistrano Deployment
 
 ##Usage
 
-capistrano-cf provides a library of rake tasks for deploying Coldfusion and Railo applications via [Capistrano](http://capistranorb.com/).  The library also includes deployment tasks specific to Windows Server, as Capistrano's default behavior of creating symlinks for shared files and directories is not compatibile with IIS.  You can specify the order the tasks are run manually in your [:stage].rb file (or deploy.rb if running the same sequence of tasks in all stages):
+capistrano-cf provides a library of rake tasks for deploying CFML applications via [Capistrano](http://capistranorb.com/) on [Coldfusion](http://www.adobe.com/products/coldfusion-family.html) or [Railo[(http://www.getrailo.org/) web application servers.  The library also includes deployment tasks specific to Windows Server, as Capistrano's default behavior of creating symlinks for shared files and directories is not compatibile with IIS.  You can specify the order the tasks are run manually in your [:stage].rb file (or deploy.rb if running the same sequence of tasks in all stages):
   
   
 	#Disable default symlink behavior
