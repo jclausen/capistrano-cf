@@ -3,7 +3,7 @@
 # ==============================
 
 # If there are directories that shouldn't be synced, enter them here
-# Note:  If your application contains .jar classloaders those will will be locked. Exclude those here  If those need to be updated we handle those separately with the deploy:major_release option
+# Note:  If your application contains .jar classloaders those will will be locked. Exclude those here.  If those need to be updated, we will handle those separately with the deploy:major_release option
 set :sync_exclude, %w{.git includes/media *.jar}
 
 
