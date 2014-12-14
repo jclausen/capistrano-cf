@@ -21,7 +21,7 @@ set :app_url, 'http://www.example.com/'
 
 
 #Windows tasks
-#TODO: Consolidate these in to default actions with dynamic server type vars  
+before "deploy:started", "windows_server:no_symlinks"
 after "deploy:started", "windows_server:upsync_shared"
 after "deploy:publishing","windows_server:downsync_shared"
 after "windows_server:downsync_shared", "windows_server:sync_release"
