@@ -27,7 +27,7 @@ You will need SSH capability on your server. A simple way to accomplish this is 
 * [curl](http://curl.haxx.se/)
 * [rsync](http://linux.die.net/man/1/rsync) (installed in CygWin by default)
 
-Make sure to set your service names for both the CFML application server and, if applicable, the Jetty Service.  You can skip the Jetty service task if your application does not use Java classloaders (This library was written with [Coldbox](http://www.coldbox.org/) applications in mind, and the Jetty service actions helpt to prevent Java Concurrent Modification errors when performing the framework reinit).
+Make sure to set your service names for both the CFML application server and, if applicable, the Jetty Service.  You can skip the Jetty service tasks if your application does not use Java classloaders. The library was written with deploying [Coldbox](http://www.coldbox.org/) applications in mind, and the Jetty service actions help to prevent Java Concurrent Modification errors when performing the framework reinit.
 
 ###Shared Files
 Using IIS virtual directories for shared directories on Windows platforms is strongly recommended for large applications.  While the rysc behavior is reliable, if your shared directories are of any size (i.e. - sub-applications, image/media libraries) deployment times can increase significantly.  The best, Capistrano-friendly way to do this is to copy the live versions of those directories in to your :shared_path and configure IIS Manager for the virtual directory.  Then omit those directories from the `set :linked_dirs,%w{shared1 lib/shared2}` statement in your deploy.rb and, if your repo contains versioned files for those directories, add them to the list of rsync exclusions in your [:stage].rb file.
